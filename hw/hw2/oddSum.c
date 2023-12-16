@@ -3,6 +3,7 @@
 
 int oddSumHelp(int count, int bound, int value)
 {
+	//fill in your code below
 	if (count == 0 && value == 0) 
 		return 1;
 	else if (value <= 0 || bound <= 0 || count <= 0) 
@@ -15,6 +16,7 @@ int oddSumHelp(int count, int bound, int value)
 	return oddSumHelp(count, bound-2, value);
 }
 
+//Do not change the code below
 void oddSum(int count, int bound, int value)
 {
     	if(value <= 0 || count <= 0 || bound <= 0) return;

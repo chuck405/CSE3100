@@ -1,3 +1,5 @@
+// Only this line of comment is provided 
+
 #include <stdio.h>
 
 int main(void) {

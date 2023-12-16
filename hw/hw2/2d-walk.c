@@ -3,6 +3,13 @@
 
 double two_d_random(int n)
 {
+	//Fill in code below
+	//When deciding which way to go for the next step, generate a random number as follows.
+	//r = rand() % 4;
+	//Treat r = 0, 1, 2, 3 as up, right, down and left respectively.
+
+	//The random walk should stop once the x coordinate or y coordinate reaches $-n$ or $n$. 
+	//The function should return the fraction of the visited $(x, y)$ coordinates inside (not including) the square.
 	int len = 1;
 	for (int i = 1; i < n; i++) len += 2;
 	
@@ -26,6 +33,7 @@ double two_d_random(int n)
 	return ans / (len * len);
 }
 
+//Do not change the code below
 int main(int argc, char *argv[])
 {
 	int trials = 1000;

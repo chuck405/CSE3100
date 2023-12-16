@@ -2,12 +2,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* print out an error message and exit */
 void my_error(char *s)
 {
     perror(s);
     exit(1);
 }
 
+/* Concatnate two strings.
+ * Dynamically allocate space for the result.
+ * Return the address of the result.
+ */
 char *my_strcat(char *s1, char *s2)
 {
     char *s3 = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));

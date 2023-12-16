@@ -8,7 +8,8 @@ int main() {
     scanf("%d", &n);
 
     int m = n;
-
+    //TODO
+	//add code below
     while (n > 1) {
         int curr = n;
         n = 0;
